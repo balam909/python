@@ -1,0 +1,11 @@
+print("Lambda functions are anonimous functions commonly returned from a function")
+def functionReturningLambda(a): return lambda b:a*b
+print("Based in a function like this: def functionReturningLambda(a): return lambda a,b:a*b")
+print("We can create a function that multiply one number with the number 2, with a call like this: myDoubler=functionReturningLambda(2)")
+myDoubler=functionReturningLambda(2)
+print("Now we can call the lambda function 'myDoubler' and multyply n-number with 2")
+print("My result usign the number 36:",myDoubler(36))
+print("Based in the same lambda expresion, we can create a function that multiply by 3 some number, with a call like this: myTrypler=functionReturningLambda(3)")
+myTrypler=functionReturningLambda(3)
+print("Now we can call the lambda function 'myTrypler' and multyply n-number with 3")
+print("My result usign the number 36:",myTrypler(36))
